@@ -1,0 +1,507 @@
+Results for running Unit Test: 
+unittest1.c:
+--- Starting Unit Test 1 ---
+
+
+---- Test Case 1 : All Copper Hand ----
+Number of Copper Cards In Hand : 5
+Expected coins: 5
+Running updateCoins()
+Coins After updateCoins() = 5
+TEST PASSED
+
+Adding 6 Bonus
+Expected Coins After 6 Bonus : 11
+Running UpdateCoins()
+Total Coins After updateCoins With Bonus : 11
+TEST PASSED
+
+---- Test Case 2 ----
+Number of Silver  Cards In Hand : 5
+Expected coins: 10
+Running updateCoins()
+Coins After updateCoins() = 10
+TEST PASSED
+
+Adding 5 Bonus
+Expected Coins After 5 Bonus : 15
+Running UpdateCoins()
+Total Coins After updateCoins With Bonus : 15
+TEST PASSED
+
+---- Test Case 3 ----
+Number of Gold Cards In Hand : 5
+Expected coins: 15
+Running updateCoins()
+Coins After updateCoins() = 15
+TEST PASSED
+
+Adding 1 Bonus
+Expected Coins After 1 Bonus : 16
+Running UpdateCoins()
+Total Coins After updateCoins With Bonus : 16
+TEST PASSED
+
+---- Total Tests ----
+Total number of test: 6
+Total number of passed test: 6
+--- End of Unit Test 1 ---
+File 'dominion.c'
+Lines executed:16.25% of 560
+Branches executed:15.90% of 415
+Taken at least once:13.25% of 415
+Calls executed:7.37% of 95
+Creating 'dominion.c.gcov'
+
+unittest2.c:
+--- Starting Unit Test 2 ---
+
+
+----- Test Case 1 -----
+
+Deck Count: 157
+Discard Count: 157
+Hand Count: 157
+Expected total of card number 21 in deck + discard + hand: 378
+Running fullDeckCount()
+Actual total of card number 21 in deck + discard + hand: 378
+TEST PASSED
+
+----- Test Case 2 -----
+
+Deck Count: 76
+Discard Count: 76
+Hand Count: 76
+Expected total of card number 25 in deck + discard + hand: 12
+Running fullDeckCount()
+Actual total of card number 25 in deck + discard + hand: 12
+TEST PASSED
+
+----- Test Case 3 -----
+
+Deck Count: 500
+Discard Count: 500
+Hand Count: 500
+Expected total of card number 0 in deck + discard + hand: 687
+Running fullDeckCount()
+Actual total of card number 0 in deck + discard + hand: 687
+TEST PASSED
+
+----- Total -----
+Total Test Case : 3
+Total Test Case Passed : 3
+
+----- Unit Test 2 Completed ----
+File 'dominion.c'
+Lines executed:17.86% of 560
+Branches executed:18.80% of 415
+Taken at least once:16.14% of 415
+Calls executed:7.37% of 95
+Creating 'dominion.c.gcov'
+
+unittest3.c
+--- Starting Unit Test 3 ---
+
+
+----- Test Case 1 -----
+
+Province Count = 8
+First 3 Supply Count
+Supply 0: 10
+Supply 1: 8
+Supply 2: 8
+Calling isGameOver()
+Game is ongoing
+TEST PASSED
+
+Province Count = 8
+Setting Province Count to 0
+Current Province Count = 0
+Calling isGameOver()
+Game is over
+TEST PASSED
+
+First 3 Supply Count
+Supply 0: 10
+Supply 1: 8
+Supply 2: 8
+Setting first three supply pile to 0
+Supply 0: 0
+Supply 1: 0
+Supply 2: 0
+Calling isGameOver()
+Game is over
+TEST PASSED
+
+----- Test Case 2 -----
+
+Province Count = 8
+First 3 Supply Count
+Supply 0: 10
+Supply 1: 8
+Supply 2: 8
+Calling isGameOver()
+Game is ongoing
+TEST PASSED
+
+Province Count = 8
+Setting Province Count to 0
+Current Province Count = 0
+Calling isGameOver()
+Game is over
+TEST PASSED
+
+First 3 Supply Count
+Supply 0: 10
+Supply 1: 8
+Supply 2: 8
+Setting first three supply pile to 0
+Supply 0: 0
+Supply 1: 0
+Supply 2: 0
+Calling isGameOver()
+Game is over
+TEST PASSED
+
+----- Test Case 3 -----
+
+Province Count = 8
+First 3 Supply Count
+Supply 0: 10
+Supply 1: 8
+Supply 2: 8
+Calling isGameOver()
+Game is ongoing
+TEST PASSED
+
+Province Count = 8
+Setting Province Count to 0
+Current Province Count = 0
+Calling isGameOver()
+Game is over
+TEST PASSED
+
+First 3 Supply Count
+Supply 0: 10
+Supply 1: 8
+Supply 2: 8
+Setting first three supply pile to 0
+Supply 0: 0
+Supply 1: 0
+Supply 2: 0
+Calling isGameOver()
+Game is over
+TEST PASSED
+
+----- Total -----
+Total Test Case : 9
+Total Test Case Passed : 9
+
+----- Unit Test 3 Completed ----
+File 'dominion.c'
+Lines executed:19.64% of 560
+Branches executed:20.72% of 415
+Taken at least once:18.07% of 415
+Calls executed:7.37% of 95
+Creating 'dominion.c.gcov'
+
+unittests4.c:
+--- Starting Unit Test 4 ---
+
+
+----- Test Case 1 -----
+
+Current Player : 1
+Expected handcount : 157
+Running numHandsCards for Player 1
+Returned handcount : 157
+TEST PASSED
+
+----- Test Case 2 -----
+
+Current Player : 1
+Expected handcount : 490
+Running numHandsCards for Player 1
+Returned handcount : 490
+TEST PASSED
+
+----- Test Case 3 -----
+
+Current Player : 1
+Expected handcount : 7
+Running numHandsCards for Player 1
+Returned handcount : 7
+TEST PASSED
+
+----- Total -----
+Total Test Case : 3
+Total Test Case Passed : 3
+
+----- Unit Test 4 Completed ----
+File 'dominion.c'
+Lines executed:20.36% of 560
+Branches executed:20.72% of 415
+Taken at least once:18.07% of 415
+Calls executed:8.42% of 95
+Creating 'dominion.c.gcov'
+
+Results for running Card Test: 
+cardtest1.c:
+--- Starting Card Test 1: Smithy ---
+
+
+Player Current Hand Count : 5
+Player Current Deck Count : 5
+Expected Hand Count after smithy effect: 8
+Expected Deck Count After Smithy Effect: 2
+
+Running smithy card effect
+
+
+Returned Hand Count After smithy effect: 9
+TEST FAILED
+
+Returned Deck Count After smithy effect: 0
+TEST FAILED
+
+Testing Victory : Estate has not changed
+TEST PASSED
+
+Testing Victory : Duchy has not changed
+TEST PASSED
+
+Testing Victory : Province has not changed
+TEST PASSED
+
+Testing Kingdom Pile has not changed
+TEST PASSED
+
+Testing Copper Supply Has No Change
+TEST PASSED
+
+Testing Silver Supply Has No Change
+TEST PASSED
+
+Testing Gold Supply Has No Change
+TEST PASSED
+
+-- Test State Change For Other Player --
+
+Testing No Change for Other Player Hand Count
+TEST PASSED
+
+Testing No Change for Other Player Deck Count
+TEST PASSED
+
+----- Total -----
+Total Test Case : 11
+Total Test Case Passed : 9
+
+----- Card Test 1 : Smithy Completed ----
+File 'dominion.c'
+Lines executed:26.61% of 560
+Branches executed:29.16% of 415
+Taken at least once:20.72% of 415
+Calls executed:13.68% of 95
+Creating 'dominion.c.gcov'
+
+cardtest2.c:
+--- Starting Card Test 2: Adventurer ---
+
+
+Setting deck to have two random tresure cards
+Player Current Copper Count in hand : 3
+Player Current Silver Count in hand : 0
+Player Current Gold Count in hand : 0
+Player Current Hand Count: 5
+
+Running Adventurere card effect
+
+Player Copper Count After : 3
+Player Silver Count After : 1
+Player Gold Count After : 1
+Player Hand Count After : 7
+
+Player Gained 0 Copper Card
+Player Gained 1 Silver Card
+Player Gained 1 Gold Card
+
+Testing if player hand count has 2 more treasure cards
+TEST PASSED
+
+Testing total treasure
+TEST PASSED
+
+Testing Victory : Estate has not changed
+TEST PASSED
+
+Testing Victory : Duchy has not changed
+TEST PASSED
+
+Testing Victory : Province has not changed
+TEST PASSED
+
+Testing Kingdom Pile has not changed
+TEST PASSED
+
+Testing Copper Supply Has No Change
+TEST PASSED
+
+Testing Silver Supply Has No Change
+TEST PASSED
+
+Testing Gold Supply Has No Change
+TEST PASSED
+
+-- Test State Change For Other Player --
+
+Testing No Change for Other Player Hand Count
+TEST PASSED
+
+Testing No Change for Other Player Deck Count
+TEST PASSED
+
+----- Total -----
+Total Test Case : 11
+Total Test Case Passed : 11
+
+----- Card Test 2 : Adventurer Completed ----
+File 'dominion.c'
+Lines executed:29.64% of 560
+Branches executed:31.57% of 415
+Taken at least once:23.13% of 415
+Calls executed:15.79% of 95
+Creating 'dominion.c.gcov'
+
+cardtest3.c:
+--- Starting Card Test 3: Village ---
+
+
+Player current hand count : 5
+Player current number of actions count : 1
+Player current deck count : 5
+
+Running village card effect
+
+Player hand count after : 5
+Player number of actions after : 2
+Player deck count after : 4
+
+Testing if player has same number of cards in hand
+TEST PASSED
+
+Testing if player has gained 2 more actions
+TEST FAILED
+
+Testing if player deck count has 1 less
+TEST PASSED
+
+Testing Victory : Estate has not changed
+TEST PASSED
+
+Testing Victory : Duchy has not changed
+TEST PASSED
+
+Testing Victory : Province has not changed
+TEST PASSED
+
+Testing Kingdom Pile has not changed
+TEST PASSED
+
+Testing Copper Supply Has No Change
+TEST PASSED
+
+Testing Silver Supply Has No Change
+TEST PASSED
+
+Testing Gold Supply Has No Change
+TEST PASSED
+
+-- Test State Change For Other Player --
+
+Testing No Change for Other Player Hand Count
+TEST PASSED
+
+Testing No Change for Other Player Deck Count
+TEST PASSED
+
+----- Total -----
+Total Test Case : 12
+Total Test Case Passed : 11
+
+----- Card Test 3 : Village Completed ----
+File 'dominion.c'
+Lines executed:30.71% of 560
+Branches executed:31.57% of 415
+Taken at least once:23.37% of 415
+Calls executed:18.95% of 95
+Creating 'dominion.c.gcov'
+
+cardtest4.c:
+--- Starting Card Test 3: Council Room ---
+
+
+Player current hand count : 5
+Player current number of buys : 1
+Player current deck count : 5
+
+Other Player current hand count : 0
+Other Player current deck count : 10
+
+Running council room card effect
+
+Player hand count after : 7
+Player number of buys after : 2
+Player deck count after : 2
+
+Other Player hand count after : 1
+Other Player deck count after : 9
+
+Testing if player hand count contains 4 more cards
+TEST FAILED
+
+Testing if player has gained 1 more buys
+TEST PASSED
+
+Testing if player deck count has 4 less cards
+TEST FAILED
+
+Testing if other player hand count has 1 more cards
+TEST PASSED
+
+Testing if other player deck count has 1 less cards
+TEST PASSED
+
+Testing Victory : Estate has not changed
+TEST PASSED
+
+Testing Victory : Duchy has not changed
+TEST PASSED
+
+Testing Victory : Province has not changed
+TEST PASSED
+
+Testing Kingdom Pile has not changed
+TEST PASSED
+
+Testing Copper Supply Has No Change
+TEST PASSED
+
+Testing Silver Supply Has No Change
+TEST PASSED
+
+Testing Gold Supply Has No Change
+TEST PASSED
+
+----- Total -----
+Total Test Case : 12
+Total Test Case Passed : 10
+
+----- Card Test 4 : Council Room Completed ----
+File 'dominion.c'
+Lines executed:32.50% of 560
+Branches executed:33.01% of 415
+Taken at least once:25.06% of 415
+Calls executed:23.16% of 95
+Creating 'dominion.c.gcov'
+

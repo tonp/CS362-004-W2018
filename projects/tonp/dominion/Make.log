@@ -1,0 +1,21 @@
+cc -Wall -fpic -coverage -lm    unittest2.c   -o unittest2
+unittest2.c: In function ‘main’:
+unittest2.c:19:6: warning: unused variable ‘numOfTests’ [-Wunused-variable]
+  int numOfTests = 0;  
+      ^
+unittest2.c:18:6: warning: variable ‘randomNum’ set but not used [-Wunused-but-set-variable]
+  int randomNum; 
+      ^
+unittest2.c:17:6: warning: variable ‘randomCard’ set but not used [-Wunused-but-set-variable]
+  int randomCard; 
+      ^
+unittest2.c:16:8: warning: unused variable ‘i’ [-Wunused-variable]
+  int a,i; 
+        ^
+unittest2.c:16:6: warning: unused variable ‘a’ [-Wunused-variable]
+  int a,i; 
+      ^
+/tmp/ccY0OwWd.o: In function `main':
+unittest2.c:(.text+0xe9): undefined reference to `initializeGame'
+collect2: error: ld returned 1 exit status
+make: *** [unittest2] Error 1
