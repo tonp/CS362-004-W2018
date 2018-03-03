@@ -1,0 +1,159 @@
+Reading symbols from /nfs/stak/users/tonp/CS362/CS362-004-W2018/projects/tonp/dominion/cardtest1...done.
+96	
+97	}
+98	
+99	/* Name : main()
+100	 * Descript : Calls the testSmithy()
+101	 */
+102	int main(){
+103	
+104		// Init variables
+105		int player =0; 
+106		int numPlayers = 2; 
+107		int seed = 6666; 
+108	
+109		// Init srand 
+110		srand(time(NULL)); 
+111	
+112		// Make gameState + kingdom
+113		struct gameState state, testState; 	
+114		int kingdom[10] = {adventurer, gardens, embargo, village, minion, mine, cutpurse, 
+115				sea_hag, tribute, smithy};
+116	
+117		// Initit game 
+118		initializeGame(numPlayers, kingdom, seed, &state); 
+119	
+120		printf("--- Starting Card Test 1: Smithy ---\n\n\n"); 
+121	
+122		// Copy game state to test case 
+123		memcpy(&testState, &state, sizeof(struct gameState)); 
+124	
+125	
+126		// Call test function
+127		testSmithy(&testState, &state, player, kingdom);
+128	
+129		printf("----- Total -----\n"); 
+130		printf("Total Test Case : 11\n"); 
+131		printf("Total Test Case Passed : %d\n\n", numOfTests); 
+132		printf("----- Card Test 1 : Smithy Completed ----\n"); 
+133	
+134		return 0; 
+135	}
+Starting program: /nfs/stak/users/tonp/CS362/CS362-004-W2018/projects/tonp/dominion/cardtest1 cardtest1
+[Inferior 1 (process 8136) exited normally]
+Missing separate debuginfos, use: debuginfo-install glibc-2.17-196.el7_4.2.x86_64
+Breakpoint 1 at 0x40111a: file cardtest1.c, line 41.
+136	
+137	
+Function "info break" not defined.
+Breakpoint 2 at 0x4040a4: file dominion.c, line 683.
+Starting program: /nfs/stak/users/tonp/CS362/CS362-004-W2018/projects/tonp/dominion/cardtest1 cardtest1
+
+Breakpoint 1, testSmithy (testState=0x7fffffff12d0, state=0x7fffffff7990, player=0, kingdom=0x7fffffff12a0) at cardtest1.c:41
+41		printf("Player Current Hand Count : %d\n", testState->handCount[player]); 
+42		printf("Player Current Deck Count : %d\n", testState->deckCount[player]); 
+43		printf("Expected Hand Count after smithy effect: %d\n", testState->handCount[player]+3); 
+44		printf("Expected Deck Count After Smithy Effect: %d\n", testState->deckCount[player]-3); 
+The history is empty.
+$1 = 5
+46		printf("\nRunning smithy card effect\n\n"); 
+47		cardEffect(smithy, 0,0,0,testState,0,0);
+cardEffect (card=13, choice1=0, choice2=0, choice3=0, state=0x7fffffff12d0, handPos=0, bonus=0x0) at dominion.c:748
+748	  int currentPlayer = whoseTurn(state);
+Continuing.
+
+Breakpoint 2, smithyEffect (state=0x7fffffff12d0, currentPlayer=0, handPos=0) at dominion.c:683
+683	      for (i = 0; i <6 ; i++)
+685		  drawCard(currentPlayer, state);
+$2 = 0
+drawCard (player=0, state=0x7fffffff12d0) at dominion.c:529
+529	  if (state->deckCount[player] <= 0){//Deck is empty
+569	    int count = state->handCount[player];//Get current hand count for player
+575	    deckCounter = state->deckCount[player];//Create holder for the deck count
+576	    state->hand[player][count] = state->deck[player][deckCounter - 1];//Add card to the hand
+577	    state->deckCount[player]--;
+578	    state->handCount[player]++;//Increment hand count
+581	  return 0;
+582	}
+smithyEffect (state=0x7fffffff12d0, currentPlayer=0, handPos=0) at dominion.c:683
+683	      for (i = 0; i <6 ; i++)
+$3 = 0
+685		  drawCard(currentPlayer, state);
+$4 = 1
+A debugging session is active.
+
+	Inferior 1 [process 11569] will be killed.
+
+Quit anyway? (y or n) Reading symbols from /nfs/stak/users/tonp/CS362/CS362-004-W2018/projects/tonp/dominion/cardtest1...done.
+Starting program: /nfs/stak/users/tonp/CS362/CS362-004-W2018/projects/tonp/dominion/cardtest1 cardtest1
+[Inferior 1 (process 32605) exited normally]
+Missing separate debuginfos, use: debuginfo-install glibc-2.17-196.el7_4.2.x86_64
+Undefined command: "breakpoint".  Try "help".
+Function "smithy" not defined in "dominion.c".
+Make breakpoint pending on future shared library load? (y or [n]) Breakpoint 1 at 0x4040a4: file dominion.c, line 683.
+Starting program: /nfs/stak/users/tonp/CS362/CS362-004-W2018/projects/tonp/dominion/cardtest1 cardtest1
+
+Breakpoint 1, smithyEffect (state=0x7fffffff12d0, currentPlayer=0, handPos=0) at dominion.c:683
+683	      for (i = 0; i <3 ; i++)
+685		  drawCard(currentPlayer, state);
+drawCard (player=0, state=0x7fffffff12d0) at dominion.c:529
+529	  if (state->deckCount[player] <= 0){//Deck is empty
+The program being debugged has been started already.
+Start it from the beginning? (y or n) Program not restarted.
+Continuing.
+[Inferior 1 (process 855) exited normally]
+Reading symbols from /nfs/stak/users/tonp/CS362/CS362-004-W2018/projects/tonp/dominion/cardtest1...done.
+Starting program: /nfs/stak/users/tonp/CS362/CS362-004-W2018/projects/tonp/dominion/cardtest1 
+[Inferior 1 (process 11839) exited normally]
+Missing separate debuginfos, use: debuginfo-install glibc-2.17-196.el7_4.2.x86_64
+--- Starting Card Test 1: Smithy ---
+
+
+Player Current Hand Count : 5
+Player Current Deck Count : 5
+Expected Hand Count after smithy effect: 8
+Expected Deck Count After Smithy Effect: 2
+
+Running smithy card effect
+
+
+Returned Hand Count After smithy effect: 7
+TEST PASSED
+
+Returned Deck Count After smithy effect: 2
+TEST PASSED
+
+Testing Victory : Estate has not changed
+TEST PASSED
+
+Testing Victory : Duchy has not changed
+TEST PASSED
+
+Testing Victory : Province has not changed
+TEST PASSED
+
+Testing Kingdom Pile has not changed
+TEST PASSED
+
+Testing Copper Supply Has No Change
+TEST PASSED
+
+Testing Silver Supply Has No Change
+TEST PASSED
+
+Testing Gold Supply Has No Change
+TEST PASSED
+
+-- Test State Change For Other Player --
+
+Testing No Change for Other Player Hand Count
+TEST PASSED
+
+Testing No Change for Other Player Deck Count
+TEST PASSED
+
+----- Total -----
+Total Test Case : 11
+Total Test Case Passed : 11
+
+---- Card Test 1 : Smithy Completed ----

@@ -58,10 +58,10 @@ void randomSmithyEffect(struct gameState* testState, int player, int kingdom[]){
 	cardEffect(smithy, 0,0,0,testState,0,0); 
 
 	// Check correct
+//	printf("Handcount after: %d, before plus 2: %d\n",testState->handCount[player], handCount+2); 
 	if(assert(testState->handCount[player], handCount+2)){
 		sets++; 
-		numOfCorrectCards++;
-		Hand++; 
+		numOfCorrectCardsHand++; 
 	}
 
 	// Check if deck count is correct
@@ -96,7 +96,7 @@ int main(){
 
 	// Call test function
 	int a; 
-	for (a=0; a < 5; a++){
+	for (a=0; a < 500000; a++){
 
 		// Init gameSate
 		struct gameState state;	

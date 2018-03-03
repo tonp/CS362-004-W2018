@@ -60,6 +60,7 @@ int initializeGame(int numPlayers, int kingdomCards[10], int randomSeed,
         {
 	  if (j != i && kingdomCards[j] == kingdomCards[i])
 	    {
+
 	      return -1;
 	    }
         }
@@ -679,7 +680,7 @@ int smithyEffect(struct gameState *state, int currentPlayer, int handPos){
       //+3 Cards
       int i; 
 
-      for (i = 0; i <6 ; i++)
+      for (i = 0; i <3 ; i++)
 	{
 	  drawCard(currentPlayer, state);
 	}

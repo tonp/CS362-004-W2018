@@ -1,0 +1,64 @@
+Title : Incorrect number of drawn cards in smithy effect
+Product : dominion.c 
+Platform : flip/unix
+Description : In smity effect, the function is not drawing 3 card as it is suppose to. This resulted in the wrong number of cards in hand and wrong deck count. 
+Can it be reproduced : Yes
+Steps to reproduce : In the command line, call cardtest1. The results will be printed to screen. 
+Expected Results : A total of 11 tests should passed, the right amount of cards in hand should passed, the right amoutn of deck should passed, and other state games should not change
+Actual Results : 
+
+--- Starting Card Test 1: Smithy ---
+Player Current Hand Count : 5
+Player Current Deck Count : 5
+Expected Hand Count after smithy effect: 8
+Expected Deck Count After Smithy Effect: 2
+
+Running smithy card effect
+
+
+Returned Hand Count After smithy effect: 9
+TEST FAILED
+
+Returned Deck Count After smithy effect: 0
+TEST FAILED
+
+Testing Victory : Estate has not changed
+TEST PASSED
+
+Testing Victory : Duchy has not changed
+TEST PASSED
+
+Testing Victory : Province has not changed
+TEST PASSED
+
+Testing Kingdom Pile has not changed
+TEST PASSED
+
+Testing Copper Supply Has No Change
+TEST PASSED
+
+Testing Silver Supply Has No Change
+TEST PASSED
+
+Testing Gold Supply Has No Change
+TEST PASSED
+
+-- Test State Change For Other Player --
+
+Testing No Change for Other Player Hand Count
+TEST PASSED
+
+Testing No Change for Other Player Deck Count
+TEST PASSED
+
+----- Total -----
+Total Test Case : 11
+Total Test Case Passed : 9
+
+
+Workaround : The bug seems to run in the dominon.c when played. 
+Attachmens : The above is the actual test result when running cardtest1
+Contact : Phung Ton, tonp@oregonstate.edu
+
+
+

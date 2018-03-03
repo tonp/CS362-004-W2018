@@ -1,0 +1,247 @@
+Results for running Unit Test: 
+unittest1.c:
+--- Starting Unit Test 1 ---
+
+
+---- Test Case 1 : All Copper Hand ----
+Number of Copper Cards In Hand : 5
+Expected coins: 5
+Running updateCoins()
+Coins After updateCoins() = 5
+TEST PASSED
+
+Adding 4 Bonus
+Expected Coins After 4 Bonus : 9
+Running UpdateCoins()
+Total Coins After updateCoins With Bonus : 9
+TEST PASSED
+
+---- Test Case 2 ----
+Number of Silver  Cards In Hand : 5
+Expected coins: 10
+Running updateCoins()
+Coins After updateCoins() = 10
+TEST PASSED
+
+Adding 8 Bonus
+Expected Coins After 8 Bonus : 18
+Running UpdateCoins()
+Total Coins After updateCoins With Bonus : 18
+TEST PASSED
+
+---- Test Case 3 ----
+Number of Gold Cards In Hand : 5
+Expected coins: 15
+Running updateCoins()
+Coins After updateCoins() = 15
+TEST PASSED
+
+Adding 2 Bonus
+Expected Coins After 2 Bonus : 17
+Running UpdateCoins()
+Total Coins After updateCoins With Bonus : 17
+TEST PASSED
+
+---- Total Tests ----
+Total number of test: 6
+Total number of passed test: 6
+--- End of Unit Test 1 ---
+File 'dominion.c'
+Lines executed:23.99% of 567
+Branches executed:25.00% of 416
+Taken at least once:16.35% of 416
+Calls executed:15.46% of 97
+Creating 'dominion.c.gcov'
+
+unittest2.c:
+--- Starting Unit Test 2 ---
+
+
+----- Test Case 1 -----
+
+Deck Count: 348
+Discard Count: 348
+Hand Count: 348
+Expected total of card number 17 in deck + discard + hand: 816
+Running fullDeckCount()
+Actual total of card number 17 in deck + discard + hand: 816
+TEST PASSED
+
+----- Test Case 2 -----
+
+Deck Count: 63
+Discard Count: 63
+Hand Count: 63
+Expected total of card number 25 in deck + discard + hand: 36
+Running fullDeckCount()
+Actual total of card number 25 in deck + discard + hand: 36
+TEST PASSED
+
+----- Test Case 3 -----
+
+Deck Count: 58
+Discard Count: 58
+Hand Count: 58
+Expected total of card number 11 in deck + discard + hand: 141
+Running fullDeckCount()
+Actual total of card number 11 in deck + discard + hand: 141
+TEST PASSED
+
+----- Total -----
+Total Test Case : 3
+Total Test Case Passed : 3
+
+----- Unit Test 2 Completed ----
+File 'dominion.c'
+Lines executed:25.57% of 567
+Branches executed:27.88% of 416
+Taken at least once:19.23% of 416
+Calls executed:15.46% of 97
+Creating 'dominion.c.gcov'
+
+unittest3.c
+--- Starting Unit Test 3 ---
+
+
+----- Test Case 1 -----
+
+Province Count = 8
+First 3 Supply Count
+Supply 0: 10
+Supply 1: 8
+Supply 2: 8
+Calling isGameOver()
+Game is ongoing
+TEST PASSED
+
+Province Count = 8
+Setting Province Count to 0
+Current Province Count = 0
+Calling isGameOver()
+Game is over
+TEST PASSED
+
+First 3 Supply Count
+Supply 0: 10
+Supply 1: 8
+Supply 2: 8
+Setting first three supply pile to 0
+Supply 0: 0
+Supply 1: 0
+Supply 2: 0
+Calling isGameOver()
+Game is over
+TEST PASSED
+
+----- Test Case 2 -----
+
+Province Count = 8
+First 3 Supply Count
+Supply 0: 10
+Supply 1: 8
+Supply 2: 8
+Calling isGameOver()
+Game is ongoing
+TEST PASSED
+
+Province Count = 8
+Setting Province Count to 0
+Current Province Count = 0
+Calling isGameOver()
+Game is over
+TEST PASSED
+
+First 3 Supply Count
+Supply 0: 10
+Supply 1: 8
+Supply 2: 8
+Setting first three supply pile to 0
+Supply 0: 0
+Supply 1: 0
+Supply 2: 0
+Calling isGameOver()
+Game is over
+TEST PASSED
+
+----- Test Case 3 -----
+
+Province Count = 8
+First 3 Supply Count
+Supply 0: 10
+Supply 1: 8
+Supply 2: 8
+Calling isGameOver()
+Game is ongoing
+TEST PASSED
+
+Province Count = 8
+Setting Province Count to 0
+Current Province Count = 0
+Calling isGameOver()
+Game is over
+TEST PASSED
+
+First 3 Supply Count
+Supply 0: 10
+Supply 1: 8
+Supply 2: 8
+Setting first three supply pile to 0
+Supply 0: 0
+Supply 1: 0
+Supply 2: 0
+Calling isGameOver()
+Game is over
+TEST PASSED
+
+----- Total -----
+Total Test Case : 9
+Total Test Case Passed : 9
+
+----- Unit Test 3 Completed ----
+File 'dominion.c'
+Lines executed:27.34% of 567
+Branches executed:29.81% of 416
+Taken at least once:21.15% of 416
+Calls executed:15.46% of 97
+Creating 'dominion.c.gcov'
+
+unittests4.c:
+--- Starting Unit Test 4 ---
+
+
+----- Test Case 1 -----
+
+Current Player : 0
+Expected handcount : 29
+Running numHandsCards for Player 0
+Returned handcount : 29
+TEST PASSED
+
+----- Test Case 2 -----
+
+Current Player : 1
+Expected handcount : 320
+Running numHandsCards for Player 1
+Returned handcount : 320
+TEST PASSED
+
+----- Test Case 3 -----
+
+Current Player : 1
+Expected handcount : 452
+Running numHandsCards for Player 1
+Returned handcount : 452
+TEST PASSED
+
+----- Total -----
+Total Test Case : 3
+Total Test Case Passed : 3
+
+----- Unit Test 4 Completed ----
+File 'dominion.c'
+Lines executed:27.69% of 567
+Branches executed:29.81% of 416
+Taken at least once:21.15% of 416
+Calls executed:16.49% of 97
+Creating 'dominion.c.gcov'
+

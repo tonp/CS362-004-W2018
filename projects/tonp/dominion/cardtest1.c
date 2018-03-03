@@ -47,9 +47,10 @@ void testSmithy(struct gameState* testState, struct gameState* state, int player
 	cardEffect(smithy, 0,0,0,testState,0,0);
   
 	printf("\nReturned Hand Count After smithy effect: %d\n", testState->handCount[player]); 
-	if(assert(testState->handCount[player], state->handCount[player]+3)){numOfTests++;}
+	if(assert(testState->handCount[player], state->handCount[player]+2)){numOfTests++;}
 
 	printf("Returned Deck Count After smithy effect: %d\n", testState->deckCount[player]); 
+
 	if(assert(testState->deckCount[player], state->deckCount[player]-3)){numOfTests++;}
 
 

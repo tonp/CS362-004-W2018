@@ -1,0 +1,46 @@
+--------------------------- BUG 1 ---------------------------
+
+Title : Adventurer card effect not drawing two treasure cards
+Product : dominion.c 
+Platform : flip/unix
+Description : In the original adventurere card effect, when the player plays this card the player draws two treasure cards in his hand, and discard the played card. In this dominion.c, the adventuerer effect is not playing the correct effect. The right amount of copper, silver and gold are not drawn correctly. This resulted in the zero test passed in randomadventuerere.c 
+Can it be reproduced : Yes
+Steps to reproduce : Run randomtestadventurere.c to reproduce. The randomtest will generate a range of tetests for the adventurere card effeect
+Expected Results : The correct treasure card drawn for copper, silver, and gold. The right number of cards in the deck after, and the correct number of cards drawn to hand. 
+Actual Results :
+----- Total -----
+Crrect Copper Drawn : 222386
+Correct Silver Drawn : 222003
+Correct Gold Drawn : 222262
+Correct Card Drawn: 500000
+Correct Deck Count : 0
+Number of Tests : 500000
+Number of Tests Passed : 0
+ 
+Workaround : The effect goes unnoticed when playing the game, the dominion game will continue. 
+Attachmens : The above is a result from running randomadventurer.c
+Contact : Phung Ton, tonp@oregonstate.edu
+
+
+--------------------------- BUG 2 ---------------------------
+
+Title : Smithy card effect is drawing inaccurate amount of cards
+Product : dominion.c 
+Platform : flip/unix
+Description : In the orignal card effect, Smithy allows the player to draw three cards to hand. In this version of the dominion.c, it is not drawing the correct amount of cards. 
+Can it be reproduced : Yes
+Steps to reproduce : Run randomcardtest2, the results will be produced indicating that none of the tests passed
+Expected Results : Correct number of cards drawn in each test, correct number of deck count after calling smithy effect, and correct number of tests passed. 
+Actual Results :
+--- Starting Random Card Test 2 : Smithy ---
+----- Total -----
+Number of Tests : 500000
+Number of correct card drawn: 0
+Number of correct deck count: 0
+Number of Tests Passed : 0
+Workaround : The game still continues without any trouble
+Attachmens : The above is an actual result from running randomcardtest2.c
+Contact : Phung Ton, tonp@oregonstate.edu
+
+
+
