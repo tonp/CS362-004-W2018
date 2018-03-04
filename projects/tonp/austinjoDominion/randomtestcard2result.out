@@ -13,7 +13,7 @@ No branches
 No calls
 
 Function 'council_room_function'
-Lines executed:0.00% of 10
+Lines executed:100.00% of 10
 No branches
 No calls
 
@@ -48,7 +48,7 @@ No branches
 No calls
 
 Function 'cardEffect'
-Lines executed:6.44% of 202
+Lines executed:7.43% of 202
 No branches
 No calls
 
@@ -73,7 +73,7 @@ No branches
 No calls
 
 Function 'isGameOver'
-Lines executed:0.00% of 10
+Lines executed:100.00% of 10
 No branches
 No calls
 
@@ -88,7 +88,7 @@ No branches
 No calls
 
 Function 'fullDeckCount'
-Lines executed:0.00% of 9
+Lines executed:100.00% of 9
 No branches
 No calls
 
@@ -103,7 +103,7 @@ No branches
 No calls
 
 Function 'numHandCards'
-Lines executed:0.00% of 2
+Lines executed:100.00% of 2
 No branches
 No calls
 
@@ -143,9 +143,9 @@ No branches
 No calls
 
 File 'dominion.c'
-Lines executed:23.99% of 567
-Branches executed:25.00% of 416
-Taken at least once:16.35% of 416
-Calls executed:15.46% of 97
+Lines executed:29.81% of 567
+Branches executed:31.25% of 416
+Taken at least once:23.08% of 416
+Calls executed:21.65% of 97
 Creating 'dominion.c.gcov'
 
